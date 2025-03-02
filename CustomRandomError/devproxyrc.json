@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
+    "plugins": [
+      {
+        "name": "GenericRandomErrorPlugin",
+        "enabled": true,
+        "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+        "configSection": "genericRandomErrorPlugin"
+      }
+    ],
+    "urlsToWatch": [
+      "https://jsonplaceholder.typicode.com/todos/*",
+      "https://jsonplaceholder.typicode.com/users/*"
+    ],
+    "genericRandomErrorPlugin": {
+      "errorsFile": "error-file.json",
+      "rate": 75
+    },
+    "logLevel": "information",
+    "newVersionNotification": "stable",
+    "showSkipMessages": true,
+    "showTimestamps": true
+  }

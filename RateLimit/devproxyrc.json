@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
+    "plugins": [
+        {
+            "name": "RateLimitingPlugin",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+            "configSection": "rateLimiting"
+        }
+    ],
+    "rateLimiting": {
+        "costPerRequest": 1,
+        "rateLimit": 3,
+        "resetTimeWindowSeconds" : 10
+    },
+    "urlsToWatch": [
+        "https://jsonplaceholder.typicode.com/*"
+    ],
+    "logLevel": "information",
+    "newVersionNotification": "stable",
+    "showSkipMessages": true
+}

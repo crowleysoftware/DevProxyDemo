@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
+    "plugins": [
+        {
+            "name": "QuoteOfTheDayHeader",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/QoTDPlugin.dll"
+        }
+    ],
+    "urlsToWatch": [
+        "https://jsonplaceholder.typicode.com/*"
+    ],
+    "logLevel": "information",
+    "newVersionNotification": "stable",
+    "showSkipMessages": true
+}

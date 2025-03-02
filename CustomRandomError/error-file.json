@@ -1,0 +1,66 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/genericrandomerrorplugin.errorsfile.schema.json",
+    "errors": [
+      {
+        "request": {
+          "url": "https://jsonplaceholder.typicode.com/todos/*"
+        },
+        "responses": [
+          {
+            "statusCode": 418,
+            "body": {
+              "message": "I'm a teapot",
+              "details": "The server refuses to brew coffee because it is, permanently, a teapot"
+            }
+          },
+          {
+            "statusCode": 429,
+            "body": {
+              "message": "Too Many Requests",
+              "details": "The user has sent too many requests in a given amount of time (\"rate limiting\")."
+            },
+            "headers": [
+              {
+                "name": "Retry-After",
+                "value": "@dynamic"
+              }
+            ]
+          },
+          {
+            "statusCode": 500,
+            "body": {
+              "message": "Internal Server Error",
+              "details": "Clearly the engineer did not gracefully handle the error"
+            }
+          }
+        ]
+      },
+      {
+        "request": {
+          "url": "https://jsonplaceholder.typicode.com/users/*"
+        },
+        "responses": [
+          {
+            "statusCode": 401,
+            "body": {
+              "message": "Unauthorized",
+              "details": "The user is not authorized to access the resource"
+            }
+          },
+          {
+            "statusCode": 403,
+            "body": {
+              "message": "Forbidden",
+              "details": "The user is not allowed to access the resource"
+            },
+            "headers": [
+              {
+                "name": "Retry-After",
+                "value": "@dynamic"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

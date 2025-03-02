@@ -1,0 +1,24 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio Files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Other Files
+*.log
+*.ds_store
+*.userprefs
+*.pidb
+*.sourcemap
+
+# Resharper
+*.DotSettings.user
