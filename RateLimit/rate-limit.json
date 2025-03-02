@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/genericrandomerrorplugin.errorsfile.schema.json",
+    "errors": [
+      {
+        "request": {
+          "url": "https://*/*"
+        },
+        "responses": [
+          {
+            "statusCode": 429,
+            "body": {
+              "message": "Too Many Requests",
+              "details": "The user has sent too many requests in a given amount of time (\"rate limiting\")."
+            },
+            "headers": [
+              {
+                "name": "Retry-After",
+                "value": "@dynamic"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
