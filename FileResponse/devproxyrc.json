@@ -2,13 +2,16 @@
     "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
     "plugins": [
         {
-            "name": "MockGeneratorPlugin",
+            "name": "MockResponsePlugin",
             "enabled": true,
-            "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
+            "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+            "configSection": "mockResponsePlugin"
         }
     ],
+    "mockResponsePlugin": {
+         "mocksFile": "mock.json"
+    },
     "urlsToWatch": [
-        "https://api.nasa.gov/planetary/apod*",
         "https://apod.nasa.gov/apod/image/*"
     ],
     "logLevel": "information",

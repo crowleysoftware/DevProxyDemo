@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/mockresponseplugin.mocksfile.schema.json",
+  "mocks": [
+    {
+      "request": {
+        "url": "https://apod.nasa.gov/apod/image/2503/iss072e574593_DonPetit2048.jpg",
+        "method": "GET"
+      },
+      "response": {
+        "statusCode": 200,
+        "body": "@apod.png",
+        "headers": [
+          {
+            "name": "Server",
+            "value": "WebServer/1.0"
+          },
+          {
+            "name": "X-Frame-Options",
+            "value": "sameorigin"
+          },
+          {
+            "name": "Last-Modified",
+            "value": "Fri, 07 Mar 2025 16:05:31 GMT"
+          },
+          {
+            "name": "ETag",
+            "value": "\u002223fa6720-c616a-62fc2cab54b8d\u0022"
+          },
+          {
+            "name": "Accept-Ranges",
+            "value": "bytes"
+          },
+          {
+            "name": "Keep-Alive",
+            "value": "timeout=5, max=100"
+          },
+          {
+            "name": "Content-Type",
+            "value": "image/jpeg"
+          },
+          {
+            "name": "Strict-Transport-Security",
+            "value": "max-age=31536000; includeSubDomains"
+          },
+          {
+            "name": "Content-Security-Policy",
+            "value": "upgrade-insecure-requests"
+          },
+          {
+            "name": "Connection",
+            "value": "Keep-Alive"
+          },
+          {
+            "name": "Date",
+            "value": "Sat, 08 Mar 2025 15:22:34 GMT"
+          },
+          {
+            "name": "Age",
+            "value": "973"
+          },
+          {
+            "name": "Content-Length",
+            "value": "811370"
+          }
+        ]
+      }
+    }
+  ]
+}

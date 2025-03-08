@@ -7,7 +7,7 @@ function Format-Response {
         StatusCode = $Response.StatusCode
         StatusDescription = $Response.StatusDescription
         Headers = $Response.Headers
-        Content = [System.Text.Encoding]::UTF8.GetString($Response.Content)
+        Content = $Response.Content | ConvertTo-Json
     }
     return $ResponseDetails | ConvertTo-Json -Depth 10
     
