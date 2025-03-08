@@ -1,23 +1,8 @@
+$url = "https://jsonplaceholder.typicode.com/posts/1"
+$iterations = 20
 
-try {
-    $Response = Invoke-WebRequest -Uri "https://jsonplaceholder.typicode.com/users/1" -Method Get -SkipHttpErrorCheck
-    
-    # Create a custom object with the response details
-    $FormattedResponse = [PSCustomObject]@{
-        StatusCode = $Response.StatusCode
-        StatusDescription = $Response.StatusDescription
-        Headers = $Response.Headers
-    }
-    
-    # Display status code and description
-    Write-Host "Status Code: $($FormattedResponse.StatusCode) - $($FormattedResponse.StatusDescription)" -ForegroundColor Cyan
-    
-    # Display headers
-    Write-Host "`nHeaders:" -ForegroundColor Yellow
-    $FormattedResponse.Headers.GetEnumerator() | Format-Table Key, Value -AutoSize
-
-} catch {
-    Write-Host "Error making request: $_" -ForegroundColor Red
+for ($i = 1; $i -le $iterations; $i++) {
+    $response = Invoke-WebRequest -Uri $url -Method Get
+    Write-Output "Response $($i): $response"
+    Start-Sleep -Seconds .5
 }
-
-

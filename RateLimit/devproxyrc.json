@@ -1,28 +1,21 @@
 {
     "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
     "plugins": [
-      {
-        "name": "RetryAfterPlugin",
-        "enabled": true,
-        "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
-      },
-      {
-        "name": "GenericRandomErrorPlugin",
-        "enabled": true,
-        "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
-        "configSection": "genericRandomErrorPlugin"
-      }
+        {
+            "name": "RateLimitingPlugin",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+            "configSection": "rateLimiting"
+        }
     ],
-    "urlsToWatch": [
-      "https://jsonplaceholder.typicode.com/*"
-    ],
-    "genericRandomErrorPlugin": {
-      "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/genericrandomerrorplugin.schema.json",
-      "errorsFile": "rate-limit.json",
-      "rate": 75
+    "rateLimiting": {
+        "costPerRequest": 1,
+        "rateLimit": 10
     },
+    "urlsToWatch": [
+        "https://jsonplaceholder.typicode.com/*"
+    ],
     "logLevel": "information",
     "newVersionNotification": "stable",
-    "showSkipMessages": true,
-    "showTimestamps": true
-  }
+    "showSkipMessages": true
+}
