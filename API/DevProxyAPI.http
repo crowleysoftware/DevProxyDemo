@@ -31,3 +31,6 @@ Content-Type: application/json
 
 ### Stop the proxy
 POST http://localhost:8897/proxy/stopproxy
+
+### Quote of the Day
+GET https://jsonplaceholder.typicode.com/users/1
