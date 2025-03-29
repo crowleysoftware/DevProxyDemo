@@ -1,0 +1,33 @@
+### GET request to example server
+GET http://localhost:8897/proxy
+
+### POST to start recording
+POST http://localhost:8897/proxy
+Content-Type: application/json
+
+{
+  "recording": true
+}
+
+### Raise Mock Request
+POST http://localhost:8897/proxy/raisemockrequest
+
+### Generate JWT token
+POST http://localhost:8897/proxy/createJwtToken
+Content-Type: application/json
+
+{
+    "name" : "Dev Proxy",
+    "audiences" : ["https://api.example.com"],
+    "issuers" : "https://dev-proxy.example.com",
+    "roles" : ["admin"],
+    "scopes" : ["Post.Read", "Post.Write"],
+    "claims" : {
+        "claim1" : "foo",
+        "claim2" : "bar"
+    },
+    "validFor" : "1"
+}
+
+### Stop the proxy
+POST http://localhost:8897/proxy/stopproxy
