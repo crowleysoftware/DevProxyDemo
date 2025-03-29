@@ -3,7 +3,7 @@
     "mocks": [
       {
         "request": {
-          "url": "https://api.nasa.gov/planetary/apod",
+          "url": "https://api.nasa.gov/planetary/apod*",
           "method": "GET"
         },
         "response": {

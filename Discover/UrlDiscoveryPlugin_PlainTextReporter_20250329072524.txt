@@ -1,0 +1,54 @@
+Wildcards
+
+You can use wildcards to catch multiple URLs with the same pattern.
+For example, you can use the following URL pattern to catch all API requests to
+JSON Placeholder API:
+
+https://jsonplaceholder.typicode.com/*
+
+Excluding URLs
+
+You can exclude URLs with ! to prevent them from being intercepted.
+For example, you can exclude the URL https://jsonplaceholder.typicode.com/authors
+by using the following URL pattern:
+
+!https://jsonplaceholder.typicode.com/authors
+https://jsonplaceholder.typicode.com/*
+
+Intercepted URLs:
+
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247512181&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-3960&w=0
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247512403&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-3960&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247513306&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-3960&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516234&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=use-collector-delta&w=0
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516450&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-4831&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516451&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-4831&w=0
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516617&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-4831&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516618&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-4831&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.3.6&apikey=c6c27850c9c24cbfae921778d2465031-4c28c161-db47-426b-9d28-733d45d05dd9-7278&upload-time=1743247516619&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-4831&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&w=0
+https://c.bing.com/c.gif?DI=4050&did=1&t=&CtsSyncId=B8602D7D2B1842AD92CE42FE41D92099&RedC=c1.microsoft.com&MXFR=184636DD00A36B043700380B012B6A62&ANON=A=F3B648A2285C99984382FC53FFFFFFFF%26E=1ea8%26W=1&NAP=V=1.9%26E=1e4e%26C=7ZyOUrscKtDUXiBnd7HAvd9jBjguOaw9jqYMeE42N7aFwaWJUFu2gA%26W=1
+https://c1.microsoft.com/c.gif?DI=4050&did=1&t=
+https://c1.microsoft.com/c.gif?DI=4050&did=1&t=&CtsSyncId=B8602D7D2B1842AD92CE42FE41D92099&MUID=184636DD00A36B043700380B012B6A62&ANON=A=F3B648A2285C99984382FC53FFFFFFFF%26E=1ea8%26W=1&NAP=V=1.9%26E=1e4e%26C=7ZyOUrscKtDUXiBnd7HAvd9jBjguOaw9jqYMeE42N7aFwaWJUFu2gA%26W=1
+https://edge.microsoft.com/autofillservice/core/page/4097606689232945777/-5634587393166667835?GroupingThreshold=60&CIdAlgoVersion=2
+https://functional.events.data.microsoft.com/OneCollector/1.0/
+https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js
+https://learn.microsoft.com/api/taxonomies?name=devlang&locale=en-us
+https://learn.microsoft.com/en-us/content-nav/MSDocsHeader-MicrosoftCloud.json?
+https://learn.microsoft.com/en-us/content-nav/site-header/site-header.json?
+https://learn.microsoft.com/en-us/feature-rollout.json
+https://learn.microsoft.com/en-us/media/event-banners/banner-ai-skills-fest-2025.jpg
+https://learn.microsoft.com/en-us/microsoft-cloud/breadcrumb/toc.json
+https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/media/mock-request-plugin.png
+https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/media/odata-paging-guidance.png
+https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/mockrequestplugin
+https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/odatapagingguidanceplugin
+https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/toc.json
+https://learn.microsoft.com/static/assets/0.4.030076540/global/deprecation.js
+https://learn.microsoft.com/static/assets/0.4.030076540/scripts/en-us/index-docs.js
+https://learn.microsoft.com/static/assets/0.4.030076540/styles/docons.a4ed0e6.a9a9a797.woff2
+https://learn.microsoft.com/static/assets/0.4.030076540/styles/site-ltr.css
+https://learn.microsoft.com/static/third-party/highlight.js/9.15.25/highlight.pack.js
+https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3
+https://raw.githubusercontent.com/dotnet/dev-proxy/main/media/icon.svg
+https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js
