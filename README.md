@@ -1,5 +1,7 @@
 # DevProxyDemo
 
+Slide Deck: https://contrivedexamplecom-my.sharepoint.com/:p:/g/personal/bob_contrivedexample_com/EQ139cgTfetFg9CbHBO9XvoB-qQvBmLOPsL7m0Py--4C1w?e=fczfkV
+
 ### NOTE: some powershell scripts may require PowerShell V7x
 
 The various folders in this repo contain a README and examples that demonstrate a particular topic.
