@@ -4,6 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\tekhe\AppData\Local\Programs\Dev Proxy\plugins</BaseOutputPath>
   </PropertyGroup>
 <ItemGroup>
   <Reference Include="dev-proxy-abstractions">
@@ -26,4 +27,7 @@
     <ExcludeAssets>runtime</ExcludeAssets>
   </PackageReference>
 </ItemGroup>
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <Exec Command="xcopy /Y &quot;$(TargetDir)*.*&quot; &quot;C:\Users\tekhe\AppData\Local\Programs\Dev Proxy\plugins&quot;&#xD;&#xA;" />
+</Target>
 </Project>

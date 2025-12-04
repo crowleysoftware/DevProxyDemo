@@ -1,0 +1,102 @@
+Wildcards
+
+You can use wildcards to catch multiple URLs with the same pattern.
+For example, you can use the following URL pattern to catch all API requests to
+JSON Placeholder API:
+
+https://jsonplaceholder.typicode.com/*
+
+Excluding URLs
+
+You can exclude URLs with ! to prevent them from being intercepted.
+For example, you can exclude the URL https://jsonplaceholder.typicode.com/authors
+by using the following URL pattern:
+
+!https://jsonplaceholder.typicode.com/authors
+https://jsonplaceholder.typicode.com/*
+
+Intercepted URLs:
+
+https://alive.github.com/_sockets/u/61208986/ws?session=eyJ2IjoiVjMiLCJ1Ijo2MTIwODk4NiwicyI6MTYyMzg5NDczMiwiYyI6NDA2NTM1NTc1MSwidCI6MTc0Mzg3Mjk1Mn0%3D--523880fe67e5447202fe8b5560e69267de4006f50120e56d708d3803bd59bb19&shared=true&p=140440095_1743872956.0
+https://api.github.com/_private/browser/stats
+https://apod.nasa.gov/apod/image/2503/iss072e574593_DonPetit2048.jpg
+https://assets.adobedtm.com/5ef092d1efb5/d6d76b37b476/launch-41185cd0b005.min.js
+https://assets.msn.com/service/msn/user?apikey=1hYoJsIRvPEnSkk0hlnJF2092mHqiz7xFenIFKa9uc&activityId=B6C1C182-0FCA-4463-AC40-3FF20765BA2F&ocid=pdp-peregrine&cm=en-us&it=app&user=m-184636DD00A36B043700380B012B6A62&scn=APP_ANON&source=market-consolidation
+https://assets.msn.com/service/news/feed/pages/weblayout?User=m-184636DD00A36B043700380B012B6A62&activityId=B6C1C182-0FCA-4463-AC40-3FF20765BA2F&adminDisabled=false&adoffsets=c1:-1,c2:-1,c3:-1,c4:-1&adsTimeout=600&apikey=0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM&audienceMode=adult&backgroundImageIsSet=false&cm=en-us&colstatus=c1:0,c2:0,c3:0,c4:0&column=c4&colwidth=300&cookieWallPresent=false&copilotApiSupported=true&disablecontent=true&inEdgeFeatures=false&it=app&l3v=2&layout=c4&memory=8&mobile=false&newsSkip=0&newsTop=48&ocid=anaheim-ntp-feeds&pgc=161&revertTimes=0&scn=APP_ANON&selection=1714268435006_f_0_4&timeOut=1000&vpSize=1528x704&wposchema=byregion
+https://assets.msn.com/statics/icons/favicon.ico
+https://avatars.githubusercontent.com/u/61208986?s=48&v=4
+https://avatars.githubusercontent.com/u/61208986?v=4
+https://avatars.githubusercontent.com/u/61208986?v=4&size=40
+https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2c-devquickstarts-web-dotnet/
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.min.ACSHASH5a59771e441076702edfb0887654dfcd.css
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-base.min.ACSHASH7d954172e0740f415c3b80ccbe555d42.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-cookieconsent.min.ACSHASH96f0c5b1219e39b8788028f5c17a5ad9.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery-cookie.min.ACSHASH20aafdf6904d3dc5db0e0e33abbfc1a4.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.min.ACSHASH35986a813756f39ab6b922979ffedb03.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-polyfills.min.ACSHASHf381d5147c85ee687ea8fbef32c83d37.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-uhf.min.ACSHASHf9f2395c582fa601707b7a5dfae9f05f.css
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/custom-oneds.min.ACSHASHd41d8cd98f00b204e9800998ecf8427e.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/components/structure/cascade-page/clientlibs/featurecontrol.min.ACSHASHc22ea5b46f3fcad90da0abcc0a3f73d4.js
+https://azure.microsoft.com/etc.clientlibs/cascade.component.authoring/dynamicclientsidelibs/handlerscripts/v1.min.ACSHASHd7106db242c2b41f88a1b02418bec7e2.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/clientlibs/clientlib-httpclient.min.ACSHASH5ee9e4e4e0a5fd39092e63d2d102b12b.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.min.ACSHASHfd487297150aecfc62ee8f1b73baa559.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/components/content/locale-picker/v1/locale-picker/clientlibs/site.min.ACSHASH47a70ddfa91a2699b73c41d09a24c7f9.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.min.ACSHASHa6d36aa0e4468d714f658e3e0c362e68.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.min.ACSHASHa8a3710424dc6e0dff393c6964441bdb.css
+https://azure.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.min.ACSHASHc3aec3d03bc5447975e3ee25b53f6c32.js
+https://azure.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/featurecontrol.min.ACSHASHc22ea5b46f3fcad90da0abcc0a3f73d4.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-chat.min.ACSHASHb2193ee3d1a572c4de0275bb103c5293.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-chat.min.ACSHASHfa6f56b2d3037982772378233706c9af.css
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-click-group-telemetry.min.ACSHASHf25fec6821f63d701a6b6291a4011894.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-contact-sales.min.ACSHASH4a1a21c1176e98acf994a206329519ba.css
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-contact-sales.min.ACSHASH4c899bc9d9bdc8ca4b7ad57788766bc6.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-cookievalidator.min.ACSHASH3db5cf9fd3fab92b3889302c8de78d1b.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-events.min.ACSHASH7677f65c1626ab1bde509437776d4291.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-market-layer.min.ACSHASH551a5d1b5ebf715e3f78c311a57fa1d7.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-mwf-ext/main-light.min.ACSHASH2b9064196454fb6aabeb69eaf95214b5.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-mwf-ext/main-light.min.ACSHASHc320e0dbef3d1fa5b09e15de4a0aa943.css
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-mwf-new/main-light.min.ACSHASH3cb55a1b7e29cabded7d23377524b55e.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-mwf-new/main-light.min.ACSHASH561c834597fb9bc5aac4021e21e006be.css
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-onecloud-util.min.ACSHASH1c7e214f5af8caa06f783a38d40127c6.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-product-pricing.min.ACSHASH2add065651afb45e8c80967dd7b86a41.css
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-product-pricing.min.ACSHASHa34586f5be96a2ea15fe00541db2cdf3.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-site.min.ACSHASH87b8f0e23485bbb3b4ecade3d42aed38.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/clientlibs/clientlib-vars/publisher.min.ACSHASHd04116a7de4f2a26cdce768dfe83c5b0.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/components/content/areaheading/v1/areaheading/clientlibs/site.min.ACSHASHf3ce0716faf38b81e39f92e91d6f05dc.js
+https://azure.microsoft.com/etc.clientlibs/onecloud/components/content/form-container/v1/form-container/clientlibs/redirect-clientlibs/isv-redirect.min.ACSHASH832c4ecfe1459d803f5f773f723e6a68.js
+https://azure.microsoft.com/favicon.ico
+https://azure.microsoft.com/msonecloudapi/assets/msocbody.js
+https://azure.microsoft.com/msonecloudapi/assets/msochead.css
+https://azure.microsoft.com/msonecloudapi/assets/msochead.js
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.18&apikey=c72e6b24df604532a6282edd268b4ba4-9cdee1fe-5d2f-4626-9620-dbad9b53a8e5-8065&upload-time=1743872971799&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&time-delta-to-apply-millis=-695&w=0&NoResponseBody=true
+https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&ext.intweb.msfpc=GUID%3D972a84f4222f4071be28ec32d8a961b0%26HASH%3D972a%26LV%3D202209%26V%3D4%26LU%3D1662641126865&w=0
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1743872957014&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&time-delta-to-apply-millis=use-collector-delta&w=0&anoncknm=app_anon&NoResponseBody=true
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1743872957021&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&w=0&anoncknm=app_anon&NoResponseBody=true
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1743872957162&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&w=0&anoncknm=app_anon&NoResponseBody=true
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1743872957165&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&w=0&anoncknm=app_anon&NoResponseBody=true
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1743872965942&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&time-delta-to-apply-millis=-1346&w=0&anoncknm=app_anon&NoResponseBody=true
+https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&ext.intweb.msfpc=GUID%3D4fd48a0435ea4153a7b8d218a8d8e169%26HASH%3D4fd4%26LV%3D202411%26V%3D4%26LU%3D1732451719762&w=0&anoncknm=app_anon
+https://c.bing.com/c.gif?rnd=1743872957022&udc=true&pg.n=default&pg.t=ntp&pg.c=161&pg.p=anaheim&rf=&tp=https%3A%2F%2Fntp.msn.com%2Fedge%2Fntp%3Flocale%3Den%26title%3DNew%2520tab%26dsp%3D1%26sp%3DBing%26prerender%3D1%26PC%3DLCTS%26ocid%3Dmsedgntp&cvs=Browser&di=340&st.dpt=&st.sdpt=antp&subcvs=homepage&lng=en-us&rid=b6c1c1820fca4463ac403ff20765ba2f&activityId=b6c1c1820fca4463ac403ff20765ba2f&d.imd=false&scr=1536x864&anoncknm=app_anon&issso=&aadState=0&ctsa=mr&CtsSyncId=21BA7D3171DC409EAC4688AABDCA5AB3&RedC=c.msn.com&MXFR=184636DD00A36B043700380B012B6A62&ANON=A=F3B648A2285C99984382FC53FFFFFFFF%26E=1ea8%26W=1&NAP=V=1.9%26E=1e4e%26C=7ZyOUrscKtDUXiBnd7HAvd9jBjguOaw9jqYMeE42N7aFwaWJUFu2gA%26W=1
+https://c.msn.com/c.gif?rnd=1743872957022&udc=true&pg.n=default&pg.t=ntp&pg.c=161&pg.p=anaheim&rf=&tp=https%3A%2F%2Fntp.msn.com%2Fedge%2Fntp%3Flocale%3Den%26title%3DNew%2520tab%26dsp%3D1%26sp%3DBing%26prerender%3D1%26PC%3DLCTS%26ocid%3Dmsedgntp&cvs=Browser&di=340&st.dpt=&st.sdpt=antp&subcvs=homepage&lng=en-us&rid=b6c1c1820fca4463ac403ff20765ba2f&activityId=b6c1c1820fca4463ac403ff20765ba2f&d.imd=false&scr=1536x864&anoncknm=app_anon&issso=&aadState=0
+https://c.msn.com/c.gif?rnd=1743872957022&udc=true&pg.n=default&pg.t=ntp&pg.c=161&pg.p=anaheim&rf=&tp=https%3A%2F%2Fntp.msn.com%2Fedge%2Fntp%3Flocale%3Den%26title%3DNew%2520tab%26dsp%3D1%26sp%3DBing%26prerender%3D1%26PC%3DLCTS%26ocid%3Dmsedgntp&cvs=Browser&di=340&st.dpt=&st.sdpt=antp&subcvs=homepage&lng=en-us&rid=b6c1c1820fca4463ac403ff20765ba2f&activityId=b6c1c1820fca4463ac403ff20765ba2f&d.imd=false&scr=1536x864&anoncknm=app_anon&issso=&aadState=0&ctsa=mr&CtsSyncId=21BA7D3171DC409EAC4688AABDCA5AB3&MUID=184636DD00A36B043700380B012B6A62
+https://collector.github.com/github/collect
+https://edge.microsoft.com/sync/v1/feeds/me/syncEntities/command/?client=Chromium&client_id=wfBweqCY6LoGMQqxZW7veg%3D%3D
+https://functional.events.data.microsoft.com/OneCollector/1.0/
+https://github.com/crowleysoftware/DevProxyDemo
+https://github.com/crowleysoftware/DevProxyDemo/branch-and-tag-count
+https://github.com/crowleysoftware/DevProxyDemo/hovercards/citation/sidebar_partial?tree_name=main
+https://github.com/crowleysoftware/DevProxyDemo/latest-commit/main
+https://github.com/crowleysoftware/DevProxyDemo/overview-files/main
+https://github.com/crowleysoftware/DevProxyDemo/recently-touched-branches
+https://github.com/crowleysoftware/DevProxyDemo/security/overall-count
+https://github.com/crowleysoftware/DevProxyDemo/tree-commit-info/main
+https://github.com/crowleysoftware/DevProxyDemo/used_by_list
+https://github.com/github-copilot/chat?skip_anchor=true
+https://github.com/notifications/941126168/watch_subscription?aria_id_prefix=repository-details&button_block=false&show_count=true
+https://github.com/notifications/indicator
+https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3
+https://ntp.msn.com/edge/ntp?locale=en&title=New tab&dsp=1&sp=Bing&prerender=1&PC=LCTS
+https://ntp.msn.com/edge/ntp/service-worker.js?bundles=latest&riverAgeMinutes=2880&navAgeMinutes=2880&networkTimeoutSeconds=5&bgTaskNetworkTimeoutSeconds=8&ssrBasePageNavAgeMinutes=720&enableEmptySectionRoute=true&enableNavPreload=true&enableFallbackVerticalsFeed=true&noCacheLayoutTemplates=true&cacheSSRBasePageResponse=true&enableStaticAdsRouting=true&enableWidgetsRegion=true
+https://play.vidyard.com/embed/v4.js
+https://rum.hlx.page/.rum/@adobe/helix-rum-js@^2/dist/rum-standalone.js
+https://sb.scorecardresearch.com/b?rn=1743872957023&c1=2&c2=3000001&cs_ucfr=1&c7=https%3A%2F%2Fntp.msn.com%2Fedge%2Fntp%3Flocale%3Den%26title%3DNew%2Btab%26dsp%3D1%26sp%3DBing%26prerender%3D1%26PC%3DLCTS%26ocid%3Dmsedgntp%26mkt%3Den-us&c8=New+tab&c9=&cs_fpid=184636DD00A36B043700380B012B6A62&cs_fpit=o&cs_fpdm=*null&cs_fpdt=*null

@@ -1,100 +1,57 @@
 {
-    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/mockresponseplugin.mocksfile.schema.json",
-    "mocks": [
-      {
-        "request": {
-          "url": "https://api.nasa.gov/planetary/apod*",
-          "method": "GET"
+  "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/mockresponseplugin.mocksfile.schema.json",
+  "mocks": [
+    {
+      "request": {
+        "url": "https://api.nasa.gov/planetary/apod*",
+        "method": "GET"
+      },
+      "response": {
+        "statusCode": 200,
+        "body": {
+          "copyright": "Simone Curzi",
+          "date": "2025-12-04",
+          "explanation": "An example of violence on a cosmic scale, enormous elliptical galaxy NGC 1316 lies about 75 million light-years away toward Fornax, the southern constellation of the Furnace. Investigating the startling sight, astronomers suspect the giant galaxy of colliding with smaller neighbor NGC 1317 seen just right of the large galaxy's center, producing far flung star streams in loops and shells. Light from their close encounter would have reached Earth some 100 million years ago. In the sharp telescopic image, the central regions of NGC 1316 and NGC 1317 appear separated by over 100,000 light-years. Complex dust lanes visible within also indicate that NGC 1316 is itself the result of a merger of galaxies in the distant past. Found on the outskirts of the Fornax galaxy cluster, NGC 1316 is known as Fornax A. One of the visually brightest of the Fornax cluster galaxies it is one of the strongest and largest celestial radio sources with radio emission extending well beyond this one degree wide field-of-view.",
+          "hdurl": "https://apod.nasa.gov/apod/image/2512/FornaxA_final_apod.jpg",
+          "media_type": "image",
+          "service_version": "v1",
+          "title": "Galaxies in the Furnace",
+          "url": "https://apod.nasa.gov/apod/image/2512/FornaxA_final_apod1024.jpg"
         },
-        "response": {
-          "statusCode": 200,
-          "body": {
-            "date": "2025-03-02",
-            "explanation": "blah blah blah",
-            "media_type": "video",
-            "service_version": "v1",
-            "title": "The Hubble Ultra Deep Field in Light and Sound",
-            "url": "https://apod.nasa.gov/apod/image/1803/AstroSoM/hudf.html"
+        "headers": [
+          { "name": "date", "value": "Thu, 04 Dec 2025 21:27:04 GMT" },
+          { "name": "content-type", "value": "application/json" },
+          { "name": "content-length", "value": "1300" },
+          { "name": "vary", "value": "Accept-Encoding" },
+          { "name": "access-control-allow-origin", "value": "*" },
+          {
+            "name": "access-control-expose-headers",
+            "value": "X-RateLimit-Limit, X-RateLimit-Remaining"
           },
-          "headers": [
-            {
-              "name": "Date",
-              "value": "Sun, 02 Mar 2025 19:35:45 GMT"
-            },
-            {
-              "name": "Content-Type",
-              "value": "application/json"
-            },
-            {
-              "name": "Transfer-Encoding",
-              "value": "chunked"
-            },
-            {
-              "name": "Connection",
-              "value": "keep-alive"
-            },
-            {
-              "name": "Access-Control-Allow-Origin",
-              "value": "*"
-            },
-            {
-              "name": "Access-Control-Expose-Headers",
-              "value": "X-RateLimit-Limit, X-RateLimit-Remaining"
-            },
-            {
-              "name": "Age",
-              "value": "0"
-            },
-            {
-              "name": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
-              "name": "Strict-Transport-Security",
-              "value": "max-age=31536000; includeSubDomains; preload"
-            },
-            {
-              "name": "Vary",
-              "value": "Accept-Encoding"
-            },
-            {
-              "name": "Via",
-              "value": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])"
-            },
-            {
-              "name": "X-Api-Umbrella-Request-Id",
-              "value": "clb1dnq2jutcfcll4jog"
-            },
-            {
-              "name": "X-Cache",
-              "value": "MISS"
-            },
-            {
-              "name": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "name": "X-Ratelimit-Limit",
-              "value": "2000"
-            },
-            {
-              "name": "X-Ratelimit-Remaining",
-              "value": "1997"
-            },
-            {
-              "name": "X-Vcap-Request-Id",
-              "value": "e31a8d5a-9677-4fbc-4071-f6ef219b833d"
-            },
-            {
-              "name": "X-Xss-Protection",
-              "value": "1; mode=block"
-            },
-            {
-              "name": "X-Frame-Options",
-              "value": "DENY"
-            }
-          ]
-        }
+          { "name": "age", "value": "0" },
+          {
+            "name": "strict-transport-security",
+            "value": "max-age=31536000; includeSubDomains; preload"
+          },
+          {
+            "name": "via",
+            "value": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])"
+          },
+          {
+            "name": "x-api-umbrella-request-id",
+            "value": "cqtd1f46nt13dcrbrlv0"
+          },
+          { "name": "x-cache", "value": "MISS" },
+          { "name": "x-content-type-options", "value": "nosniff" },
+          { "name": "x-ratelimit-limit", "value": "4000" },
+          { "name": "x-ratelimit-remaining", "value": "3998" },
+          {
+            "name": "x-vcap-request-id",
+            "value": "91040495-d207-4fe5-566c-1139ff3f8132"
+          },
+          { "name": "x-frame-options", "value": "DENY" }
+        ]
       }
-    ]
-  }
+    }
+  ]
+}
