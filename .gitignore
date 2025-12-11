@@ -22,3 +22,6 @@ packages/
 
 # Resharper
 *.DotSettings.user
+
+mocks*.json
+UrlDiscoveryPlugin*
