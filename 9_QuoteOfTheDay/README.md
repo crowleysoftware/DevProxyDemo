@@ -2,6 +2,8 @@
 
 This sample demonstrates using a custom-built plugin. The project that implements this plugin is in the CustomPlugin folder of this repository.
 
+The official documentation for building DevProxy plugins can be found [here](https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/how-to/create-custom-plugin)
+
 The .NET project that implements the plugin has an after-build step that copies the built DLL into the `$(LOCALAPPDATA)\Programs\Dev Proxy\plugins` folder which is where DevProxy is installed on Windows. This allows you to use the following configuration without manual copying of the dll:
 
 ```json
