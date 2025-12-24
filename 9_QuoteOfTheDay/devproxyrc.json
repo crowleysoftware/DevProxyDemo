@@ -1,10 +1,10 @@
 {
-    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v0.25.0/rc.schema.json",
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v2.0.0/rc.schema.json",
     "plugins": [
         {
-            "name": "QuoteOfTheDayHeader",
+            "name": "QotdHeader",
             "enabled": true,
-            "pluginPath": "~appFolder/plugins/QoTDPlugin.dll"
+            "pluginPath": "C:\\Users\\tekhe\\source\\repos\\QuoteOfTheDayDevProxyPlugin\\QuoteOfTheDayPlugin\\bin\\Debug\\net10.0\\QuoteOfTheDayPlugin.dll"
         }
     ],
     "urlsToWatch": [
