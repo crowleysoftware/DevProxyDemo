@@ -1,5 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v2.0.0/rc.schema.json",
+    "port": 8003,
     "plugins": [
         {
             "name": "RateLimitingPlugin",
