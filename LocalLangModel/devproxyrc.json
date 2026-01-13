@@ -3,7 +3,7 @@
     "port": 8003,
     "languageModel": {
         "enabled": true,
-        "model": "phi4",
+        "model": "mistral",
         "client": "Ollama",
         "url": "http://localhost:11434"
     },
