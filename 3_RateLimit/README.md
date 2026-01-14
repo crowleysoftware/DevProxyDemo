@@ -1,4 +1,4 @@
-# Rate Limit Plugin
+# Rate Limit Plugin  Plus reporting
 
 While you can certainly return 429 from any custom error file, this plugin is better at simulating a real world rate limiting scenario.
 

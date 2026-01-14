@@ -15,7 +15,7 @@ $cookie.Domain = 'api.openai.com'
 $session.Cookies.Add($cookie)
 Invoke-WebRequest -Uri 'https://api.openai.com/v1/chat/completions' -Method POST -Headers $headers -WebSession $session -ContentType 'application/json' -Body '{
     "model": "mistral",
-    "prompt": "Is PLA food safe?",
+    "prompt": "What is the air speed velocity of an unladen swallow?",
 	  "max_tokens": 250,
 	  "temperature": 0
  }'

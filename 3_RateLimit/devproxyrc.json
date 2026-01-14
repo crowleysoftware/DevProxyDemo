@@ -1,23 +1,36 @@
 {
-    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v2.0.0/rc.schema.json",
-    "port": 8003,
-    "plugins": [
-        {
-            "name": "RateLimitingPlugin",
-            "enabled": true,
-            "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll",
-            "configSection": "rateLimiting"
-        }
-    ],
-    "rateLimiting": {
-        "costPerRequest": 1,
-        "rateLimit": 3,
-        "resetTimeWindowSeconds" : 10
+  "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v2.0.0/rc.schema.json",
+  "plugins": [
+    {
+      "name": "ExecutionSummaryPlugin",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll",
+      "configSection": "exsumm"
     },
-    "urlsToWatch": [
-        "https://jsonplaceholder.typicode.com/*"
-    ],
-    "logLevel": "information",
-    "newVersionNotification": "stable",
-    "showSkipMessages": true
+    {
+      "name": "RateLimitingPlugin",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll",
+      "configSection": "rateLimiting"
+    },
+    {
+      "name": "MarkdownReporter",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll"
+    }
+  ],
+  "exsumm": {
+    "groupBy": "url",
+    "includeHeaders": true,
+    "includeBody": false
+  },
+  "rateLimiting": {
+    "costPerRequest": 1,
+    "rateLimit": 3,
+    "resetTimeWindowSeconds": 10
+  },
+  "urlsToWatch": ["https://jsonplaceholder.typicode.com/*"],
+  "logLevel": "information",
+  "newVersionNotification": "stable",
+  "showSkipMessages": true
 }
