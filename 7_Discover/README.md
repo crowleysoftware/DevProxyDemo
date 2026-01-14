@@ -6,7 +6,7 @@ The devproxyrc.json file in this folder is an exact copy of ~appFolder/presets/u
 This is for demonstration only, normally to discover urls you don't create your own config file, you just use the already supplied one:
 
 ```
-devproxy --config-file "~appFolder\config\urls-to-watch.json" --watch-process-names msedge
+devproxy --watch-process-names msedge
 ```
 
 Replace "msedge" with the name of the process to watch.

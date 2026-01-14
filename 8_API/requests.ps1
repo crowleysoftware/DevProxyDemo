@@ -1,7 +1,10 @@
+Clear-Host
+
 $baseDevProxyApiUrl = "http://localhost:8897"
 
 # Get info on your currently running proxy
-Invoke-WebRequest -Uri "$baseDevProxyApiUrl/proxy" -Method Get
+$devProxyResponse = Invoke-WebRequest -Uri "$baseDevProxyApiUrl/proxy" -Method Get
+$devProxyResponse.RawContent
 
 # Start recording
 $postBody = @{
@@ -10,11 +13,14 @@ $postBody = @{
 Invoke-WebRequest -Uri "$baseDevProxyApiUrl/proxy" -Method Post -Body ($postBody | ConvertTo-Json) -ContentType "application/json"
 
 # raise mock request
+Clear-Host
 Invoke-WebRequest -Uri "$baseDevProxyApiUrl/proxy/raisemockrequest" -Method Post
 
 # stop proxy
+Clear-Host
 Invoke-WebRequest -Uri "$baseDevProxyApiUrl/proxy/stopproxy" -Method Post
 
+Clear-Host
 # generate jwt
 $jwtbody = @{
     "name" = "Dev Proxy"
