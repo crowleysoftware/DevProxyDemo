@@ -1,4 +1,5 @@
 # DevProxyDemo
+Custom Plug-In: https://github.com/crowleysoftware/QuoteOfTheDayDevProxyPlugin
 
 Insomnia Request Collection: https://github.com/crowleysoftware/DevProxyCodeMash2026
 
